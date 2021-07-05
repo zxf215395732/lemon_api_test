@@ -52,6 +52,7 @@ public class RechargeTest extends BaseTest {
         //2、取到的结果拼接上timestamp
         String str = preStr+timestamp;
         //3、通过RSA加密算法对拼接的结果进行加密,得到sign签名
+
         //String sign = RSAManager.encryptWithBase64(str);
         //保存到环境变量中
         Environment.envData.put("timestamp",timestamp);
